@@ -54,7 +54,7 @@ class VideoGameStore{
 }
 
 //---------------------------------------------------------------
-class BasicPropertiesItemsStore {
+export class BasicPropertiesItemsStore {
     constructor(
         private name:string,
         private price:number,
@@ -82,7 +82,7 @@ class VideoGame extends BasicPropertiesItemsStore {
     }
 }
 
-class ItemStoreGetter<T extends BasicPropertiesItemsStore> {
+export class ItemStoreGetter<T extends BasicPropertiesItemsStore> {
     protected items:T[];
     
     constructor(items:T[]){
